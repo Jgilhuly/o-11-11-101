@@ -8,20 +8,21 @@
   text-align: center;
   margin-bottom: 60px;
   padding: 40px;
-  background: white;
+  background: var(--bg-secondary);
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px var(--shadow);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hero-section h1 {
   font-size: 40px;
   margin: 0 0 10px 0;
-  color: #333;
+  color: var(--text-primary);
 }
 
 .hero-section p {
   font-size: 18px;
-  color: #666;
+  color: var(--text-secondary);
   margin: 0;
 }
 
@@ -33,17 +34,17 @@
 }
 
 .feature-card {
-  background: white;
+  background: var(--bg-secondary);
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px var(--shadow);
   text-align: center;
   transition: all 0.3s ease;
 }
 
 .feature-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 16px var(--shadow-hover);
 }
 
 .feature-icon {
@@ -54,39 +55,40 @@
 .feature-card h2 {
   font-size: 24px;
   margin: 15px 0;
-  color: #333;
+  color: var(--text-primary);
 }
 
 .feature-card p {
-  color: #666;
+  color: var(--text-secondary);
   line-height: 1.6;
   margin: 0 0 20px 0;
 }
 
 .feature-link {
   display: inline-block;
-  color: #0066cc;
+  color: var(--link-color);
   text-decoration: none;
   font-weight: 600;
   transition: all 0.3s ease;
 }
 
 .feature-link:hover {
-  color: #0052a3;
+  color: var(--link-hover);
   text-decoration: underline;
 }
 
 .quick-links {
-  background: white;
+  background: var(--bg-secondary);
   padding: 40px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px var(--shadow);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .quick-links h2 {
   font-size: 24px;
   margin: 0 0 30px 0;
-  color: #333;
+  color: var(--text-primary);
   text-align: center;
 }
 
@@ -99,7 +101,7 @@
 .quick-link {
   display: block;
   padding: 15px 20px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--navbar-gradient);
   color: white;
   text-decoration: none;
   border-radius: 4px;
@@ -110,7 +112,7 @@
 
 .quick-link:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px var(--shadow-hover);
 }
 
 @media (max-width: 768px) {

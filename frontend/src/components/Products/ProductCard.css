@@ -1,14 +1,14 @@
 .product-card {
-  background: white;
-  border: 1px solid #ddd;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px var(--shadow);
   transition: all 0.3s ease;
 }
 
 .product-card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px var(--shadow-hover);
   transform: translateY(-2px);
 }
 
@@ -23,7 +23,7 @@
 .product-header h3 {
   margin: 0;
   font-size: 18px;
-  color: #333;
+  color: var(--text-primary);
 }
 
 .stock-badge {
@@ -35,18 +35,18 @@
 }
 
 .stock-badge.in-stock {
-  background-color: #d4edda;
-  color: #155724;
+  background-color: var(--badge-success-bg);
+  color: var(--badge-success-text);
 }
 
 .stock-badge.out-of-stock {
-  background-color: #f8d7da;
-  color: #721c24;
+  background-color: var(--badge-danger-bg);
+  color: var(--badge-danger-text);
 }
 
 .product-description {
   margin: 0 0 12px 0;
-  color: #666;
+  color: var(--text-secondary);
   font-size: 14px;
   line-height: 1.5;
 }
@@ -56,19 +56,19 @@
   justify-content: space-between;
   margin-bottom: 12px;
   padding-bottom: 12px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--border-light);
 }
 
 .price {
   font-size: 24px;
   font-weight: bold;
-  color: #28a745;
+  color: var(--badge-success-text);
 }
 
 .category {
   font-size: 14px;
-  color: #666;
-  background-color: #f0f0f0;
+  color: var(--text-secondary);
+  background-color: var(--category-bg);
   padding: 4px 12px;
   border-radius: 4px;
 }
@@ -83,8 +83,8 @@
 .tag {
   display: inline-block;
   padding: 4px 10px;
-  background-color: #e8f4f8;
-  color: #0066cc;
+  background-color: var(--tag-bg);
+  color: var(--tag-text);
   border-radius: 12px;
   font-size: 12px;
 }
@@ -109,20 +109,20 @@
 }
 
 .btn-primary {
-  background-color: #0066cc;
+  background-color: var(--button-primary);
   color: white;
 }
 
 .btn-primary:hover {
-  background-color: #0052a3;
+  background-color: var(--button-primary-hover);
 }
 
 .btn-danger {
-  background-color: #dc3545;
+  background-color: var(--button-danger);
   color: white;
 }
 
 .btn-danger:hover {
-  background-color: #c82333;
+  background-color: var(--button-danger-hover);
 }
 
